@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Django Demo{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="{% url 'core:home' %}">Django Demo</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="{% url 'core:home' %}">Home</a></li>
+                <li><a href="{% url 'core:about' %}">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Django Demo. Built with Django and best practices.</p>
+        </div>
+    </footer>
+</body>
+</html>

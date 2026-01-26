@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{{ title }} - Django Demo{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>{{ title }}</h1>
+    <p class="lead">{{ message }}</p>
+</div>
+
+<div class="content-section">
+    <h2>Project Features</h2>
+    <ul class="feature-list">
+        <li>✅ Django 5.0.1 with latest features</li>
+        <li>✅ Separated settings for development and production</li>
+        <li>✅ Environment variables for configuration</li>
+        <li>✅ WhiteNoise for static file serving</li>
+        <li>✅ Modern, responsive UI design</li>
+        <li>✅ Clean project structure</li>
+        <li>✅ Security best practices</li>
+    </ul>
+
+    <h2>Getting Started</h2>
+    <p>This project follows Django best practices including:</p>
+    <ul class="feature-list">
+        <li>Modular settings configuration</li>
+        <li>Environment-based secrets management</li>
+        <li>Proper static files handling</li>
+        <li>Clean URL routing</li>
+        <li>Template inheritance</li>
+    </ul>
+
+    <div class="cta">
+        <a href="{% url 'core:home' %}" class="btn btn-secondary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
