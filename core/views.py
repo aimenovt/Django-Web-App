@@ -3,8 +3,8 @@ from django.shortcuts import render
 
 def home(request):
     context = {
-        'title': 'Welcome to Django Demo',
-        'message': 'This is a Django web application built with best practices.',
+        'title': 'Welcome',
+        'message': 'This is a web application',
     }
     return render(request, 'core/home.html', context)
 
@@ -12,6 +12,6 @@ def home(request):
 def about(request):
     context = {
         'title': 'About',
-        'message': 'Learn more about this Django project.',
+        'message': 'Learn more',
     }
     return render(request, 'core/about.html', context)

@@ -21,7 +21,7 @@ wheels/
 *.egg
 .md
 
-# Virtual Environment
+# Virtual Env
 venv/
 env/
 ENV/
@@ -35,7 +35,7 @@ db.sqlite3-journal
 /media
 /staticfiles
 
-# Environment variables
+# Env variables
 .env
 .env.local
 
